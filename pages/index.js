@@ -81,7 +81,11 @@ const Index = () => (
 					</div>
 
 					<div className="col-7 p-0 no-gutters">
-						<img style={{ width: '20rem' }} src="/imgs/home-1.png" alt="" />
+						<img
+							style={{ width: '20rem', height: 900, objectFit: 'cover' }}
+							src="/imgs/home-1.png"
+							alt=""
+						/>
 					</div>
 				</div>
 			</span>
@@ -119,16 +123,16 @@ const Index = () => (
 			</div>
 		</section>
 
-		<section className="row col-12 mt-0 brands-section">
+		<section className="mt-0 brands-section">
 			<h1 className="mx-auto">
 				Choose from<br /> Popular Brands
 			</h1>
 
 			<div className="row">
-				<div className="col-12 col-md-8">
+				<div className="col-12 col-md-7">
 					<img src="/imgs/home-4.png" className="img-fluid w-100" alt="" />
 				</div>
-				<div className="col-12 col-md-3 text" style={{ marginTop: 90 }}>
+				<div className="col-12 col-md-3 text" style={{ marginTop: 120 }}>
 					<h4>Go ahead book a visit with Truffll beauty crew today</h4>
 					<div className="text-left mx-auto button-container">
 						<Button>Book Your Visit Now</Button>
@@ -179,6 +183,11 @@ const Index = () => (
 				}
 
 				@media (max-width: 560px) {
+					.banner {
+						height: 500px;
+						object-fit: cover;
+					}
+
 					h1 {
 						font-size: 2rem !important;
 					}

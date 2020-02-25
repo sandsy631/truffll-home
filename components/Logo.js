@@ -9,7 +9,6 @@ export default function Logo() {
 					div {
 						position: absolute;
 						top: 0;
-						z-index: 10;
 					}
 					.logo {
 						width: 200px;

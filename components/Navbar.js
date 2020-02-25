@@ -22,7 +22,7 @@ export default function Navbar() {
 				<span className="navbar-toggler-icon" />
 			</button>
 			<div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-				<div className="navbar-nav ml-auto">
+				<div className="navbar-nav ml-auto text-right">
 					<a className="nav-item nav-link" href="#">
 						Login
 					</a>
