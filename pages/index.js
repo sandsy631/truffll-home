@@ -1,203 +1,206 @@
-import Head from 'next/head'
+import Navbar from '../components/Navbar';
+import Button from '../components/Button';
 
-const Home = () => (
-  <div className="container">
-    <Head>
-      <title>Create Next App</title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
+const Index = () => (
+	<div className="container-fluid p-0">
+		<Navbar />
+		<header className="d-flex align-items-center justify-content-center">
+			<div className="position-absolute header-text">
+				<h1>Shop your favourite beauty products at home</h1>
+				<Button variant="primary">Learn More</Button>
+			</div>
+			<img className="img-fluid banner" src="/imgs/Cover.png" alt="Cover" />
+		</header>
+		<section className="container">
+			<h1>
+				A Whole New Way<br /> To Shop Beauty
+			</h1>
 
-    <main>
-      <h1 className="title">
-        Welcome to <a href="https://nextjs.org">Next.js!</a>
-      </h1>
+			<span className="d-none d-md-block">
+				<div className="row">
+					<div className="col-12 col-md-3">
+						<div className="card">
+							<h3>1</h3>
+							<p>Just answer our form on what products should we bring to your house</p>
+						</div>
 
-      <p className="description">
-        Get started by editing <code>pages/index.js</code>
-      </p>
+						<div className="card">
+							<h3>3</h3>
+							<p>
+								Our beauty crew will come over with a whole bunch of beauty products which you can try
+								IRL.
+							</p>
+						</div>
+					</div>
+					<div className="col-12 col-md-6">
+						<div className="character-img">
+							<img className="img-fluid w-100" src="/imgs/home-1.png" alt="" />
+						</div>
+					</div>
+					<div className="col-12 col-md-3">
+						<div className="card">
+							<h3>2</h3>
+							<p>Select a time, date and we will follow to fix an appointment</p>
+						</div>
+						<div className="card">
+							<h3>4</h3>
+							<p>
+								Select the products you like and make cash / cashless payment. You are ready for your
+								takeoff!
+							</p>
+						</div>
+					</div>
+				</div>
+			</span>
 
-      <div className="grid">
-        <a href="https://nextjs.org/docs" className="card">
-          <h3>Documentation &rarr;</h3>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+			<span className="d-block d-md-none">
+				<div className="row">
+					<div className="col-4">
+						<div className="text-center">
+							<h3>1</h3>
+							<p>Just answer our form on what products should we bring to your house</p>
+						</div>
+						<div className="text-center">
+							<h3>2</h3>
+							<p>Select a time, date and we will follow to fix an appointment</p>
+						</div>
+						<div className="text-center">
+							<h3>3</h3>
+							<p>
+								Our beauty crew will come over with a whole bunch of beauty products which you can try
+								IRL.
+							</p>
+						</div>
+						<div className="text-center">
+							<h3>4</h3>
+							<p>
+								Select the products you like and make cash / cashless payment. You are ready for your
+								takeoff!
+							</p>
+						</div>
+					</div>
 
-        <a href="https://nextjs.org/learn" className="card">
-          <h3>Learn &rarr;</h3>
-          <p>Learn about Next.js in an interactive course with quizzes!</p>
-        </a>
+					<div className="col-7 p-0 no-gutters">
+						<img style={{ width: '20rem' }} src="/imgs/home-1.png" alt="" />
+					</div>
+				</div>
+			</span>
+			<div className="row position-relative">
+				<div className="col-12 col-md-5 d-flex flex-column justify-content-center ">
+					<h3 className="text-uppercase">Why Call The Beauty Crew Home</h3>
+					<ul style={{ paddingLeft: 20 }}>
+						<li>See makeup & skincare products IRL before buying</li>
+						<li>Find the exact shades you love</li>
+						<li>No more used products</li>
+						<li>Save yourself the hassle of dealing with returns</li>
+					</ul>
+					<div className="text-left mr-auto">
+						<Button>Book Now</Button>
+					</div>
+				</div>
+				<div className="col-12 col-md-7">
+					<img src="/imgs/home-2.png" className="img-fluid" alt="" />
+				</div>
+			</div>
 
-        <a
-          href="https://github.com/zeit/next.js/tree/master/examples"
-          className="card"
-        >
-          <h3>Examples &rarr;</h3>
-          <p>Discover and deploy boilerplate example Next.js projects.</p>
-        </a>
+			<div className="row position-relative">
+				<div className="col-12 col-md-7">
+					<img src="/imgs/home-3.png" className="img-fluid" alt="" />
+				</div>
+				<div className="col-12 col-md-5 d-flex flex-column justify-content-center ">
+					<p>
+						Our beauty crew is like in store assistant who can answer all your questions aot how to use a
+						product, help you find the right product based on your influences looks
+					</p>
+					<div className="text-left mr-auto">
+						<Button>Book Now</Button>
+					</div>
+				</div>
+			</div>
+		</section>
 
-        <a
-          href="https://zeit.co/new?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          className="card"
-        >
-          <h3>Deploy &rarr;</h3>
-          <p>
-            Instantly deploy your Next.js site to a public URL with ZEIT Now.
-          </p>
-        </a>
-      </div>
-    </main>
+		<section className="row col-12 mt-0 brands-section">
+			<h1 className="mx-auto">
+				Choose from<br /> Popular Brands
+			</h1>
 
-    <footer>
-      <a
-        href="https://zeit.co?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Powered by <img src="/zeit.svg" alt="ZEIT Logo" />
-      </a>
-    </footer>
+			<div className="row">
+				<div className="col-12 col-md-8">
+					<img src="/imgs/home-4.png" className="img-fluid w-100" alt="" />
+				</div>
+				<div className="col-12 col-md-3 text" style={{ marginTop: 90 }}>
+					<h4>Go ahead book a visit with Truffll beauty crew today</h4>
+					<div className="text-left mx-auto button-container">
+						<Button>Book Your Visit Now</Button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<style jsx>
+			{`
+				p {
+					font-size: 1.2rem;
+				}
+				.banner {
+					margin-top: 20px;
+				}
+				.header-text {
+					text-align: center;
+					width: 50%;
+					color: white;
+					text-transform: uppercase;
+				}
+				.header-text h1 {
+					font-size: 54px;
+					margin-bottom: 20px;
+				}
+				section {
+					position: relative;
+					margin-top: 100px;
+				}
+				section > h1 {
+					font-weight: 700;
+					font-size: 60px;
+					text-align: center;
+					color: #e42313;
+					text-transform: uppercase;
+				}
+				.character-img {
+					display: flex;
+					justify-content: center;
+					height: 650px;
+					width: 100%;
+				}
+				.card {
+					margin-top: 100px;
+					border: 0;
+					text-align: center;
+					width: 240px;
+				}
 
-    <style jsx>{`
-      .container {
-        min-height: 100vh;
-        padding: 0 0.5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
+				@media (max-width: 560px) {
+					h1 {
+						font-size: 2rem !important;
+					}
+					.brands-section {
+						margin-top: 50px !important;
+						padding: 0px;
+						margin: 0px;
+					}
+					.brands-section .row {
+						text-align: center;
+					}
+					.brands-section .text {
+						margin-top: 0px !important;
+					}
+					.brands-section .text .button-container {
+						text-align: center !important;
+						margin-bottom: 50px;
+					}
+				}
+			`}
+		</style>
+	</div>
+);
 
-      main {
-        padding: 5rem 0;
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-
-      footer {
-        width: 100%;
-        height: 100px;
-        border-top: 1px solid #eaeaea;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      footer img {
-        margin-left: 0.5rem;
-      }
-
-      footer a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      a {
-        color: inherit;
-        text-decoration: none;
-      }
-
-      .title a {
-        color: #0070f3;
-        text-decoration: none;
-      }
-
-      .title a:hover,
-      .title a:focus,
-      .title a:active {
-        text-decoration: underline;
-      }
-
-      .title {
-        margin: 0;
-        line-height: 1.15;
-        font-size: 4rem;
-      }
-
-      .title,
-      .description {
-        text-align: center;
-      }
-
-      .description {
-        line-height: 1.5;
-        font-size: 1.5rem;
-      }
-
-      code {
-        background: #fafafa;
-        border-radius: 5px;
-        padding: 0.75rem;
-        font-size: 1.1rem;
-        font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-          DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-      }
-
-      .grid {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-
-        max-width: 800px;
-        margin-top: 3rem;
-      }
-
-      .card {
-        margin: 1rem;
-        flex-basis: 45%;
-        padding: 1.5rem;
-        text-align: left;
-        color: inherit;
-        text-decoration: none;
-        border: 1px solid #eaeaea;
-        border-radius: 10px;
-        transition: color 0.15s ease, border-color 0.15s ease;
-      }
-
-      .card:hover,
-      .card:focus,
-      .card:active {
-        color: #0070f3;
-        border-color: #0070f3;
-      }
-
-      .card h3 {
-        margin: 0 0 1rem 0;
-        font-size: 1.5rem;
-      }
-
-      .card p {
-        margin: 0;
-        font-size: 1.25rem;
-        line-height: 1.5;
-      }
-
-      @media (max-width: 600px) {
-        .grid {
-          width: 100%;
-          flex-direction: column;
-        }
-      }
-    `}</style>
-
-    <style jsx global>{`
-      html,
-      body {
-        padding: 0;
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-          Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-    `}</style>
-  </div>
-)
-
-export default Home
+export default Index;
