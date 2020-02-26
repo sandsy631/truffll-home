@@ -35,7 +35,7 @@ class Index extends React.Component {
 					<div className="position-absolute header-text">
 						<h1>{t('headerText')}</h1>
 						<Button variant="primary">
-							<a href="#learnMore" className="text-white">
+							<a href="https://charu470199.typeform.com/to/YD8ZMm" className="text-white">
 								Learn More
 							</a>
 						</Button>
