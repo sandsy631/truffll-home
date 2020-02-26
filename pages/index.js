@@ -56,8 +56,7 @@ class Index extends React.Component {
 							</div>
 							<div className="col-12 col-md-6">
 								<div className="character-img">
-									{/* <img className="img-fluid w-100" src="/imgs/home-1.png" alt="" /> */}
-									<video src="/character-anm.mp4" height={380} autoPlay loop />
+									<img className="img-fluid w-100" src="/imgs/home-1.png" alt="" />
 								</div>
 							</div>
 							<div className="col-12 col-md-3">
@@ -86,12 +85,8 @@ class Index extends React.Component {
 								))}
 							</div>
 
-							<div className="col-6  p-0 no-gutters">
-								<div>
-									<video height={300} width={200} autoPlay loop>
-										<source src="/character-anm.mp4" />
-									</video>
-								</div>
+							<div className="col-6 p-0 no-gutters">
+								<img className="img-fluid" style={{ height: 260 }} src="/imgs/home-1.png" alt="" />
 							</div>
 						</div>
 					</span>
