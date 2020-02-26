@@ -90,7 +90,12 @@ class Index extends React.Component {
 							</div>
 
 							<div className="col-6 p-0 no-gutters">
-								<img className="img-fluid" style={{ height: 260 }} src="/imgs/home-1.png" alt="" />
+								<img
+									className="img-fluid"
+									style={{ height: 300, objectFit: 'cover' }}
+									src="/imgs/home-1.png"
+									alt=""
+								/>
 							</div>
 						</div>
 					</span>
