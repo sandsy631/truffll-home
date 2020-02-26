@@ -34,8 +34,13 @@ class Index extends React.Component {
 				<header className="d-flex align-items-center justify-content-center">
 					<div className="position-absolute header-text">
 						<h1>{t('headerText')}</h1>
-						<Button variant="primary">
-							<a href="https://charu470199.typeform.com/to/YD8ZMm" className="text-white">
+						<Button variant="primary" className="d-none d-md-inline">
+							<a href="#learnMore" className="text-white ">
+								Learn More
+							</a>
+						</Button>
+						<Button variant="primary" className="d-inline d-md-none">
+							<a href="#learn" className="text-white ">
 								Learn More
 							</a>
 						</Button>
@@ -76,7 +81,7 @@ class Index extends React.Component {
 						</div>
 					</span>
 
-					<span className="d-block d-md-none">
+					<span className="d-block d-md-none" id="learn">
 						<div className="row">
 							<div className="col-6">
 								{en.services.map((s, index) => (
