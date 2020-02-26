@@ -34,14 +34,18 @@ class Index extends React.Component {
 				<header className="d-flex align-items-center justify-content-center">
 					<div className="position-absolute header-text">
 						<h1>{t('headerText')}</h1>
-						<Button variant="primary">Learn More</Button>
+						<Button variant="primary">
+							<a href="#learnMore" className="text-white">
+								Learn More
+							</a>
+						</Button>
 					</div>
 					<img className="img-fluid banner" src="/imgs/Cover.png" alt="Cover" />
 				</header>
 				<section className="container">
 					<h1>{en.sectionText}</h1>
 
-					<span className="d-none d-md-block">
+					<span className="d-none d-md-block" id="learnMore">
 						<div className="row">
 							<div className="col-12 col-md-3">
 								<div className="card">
@@ -99,7 +103,11 @@ class Index extends React.Component {
 							<h3 className="text-uppercase">{en.servicesText}</h3>
 							<ul style={{ paddingLeft: 20 }}>{en.servicesPoints.map((p) => <li key={p}>{p}</li>)}</ul>
 							<div className="text-left mr-auto">
-								<Button>Book Now</Button>
+								<Button>
+									<a className="text-white" href="https://charu470199.typeform.com/to/YD8ZMm">
+										Book Now
+									</a>
+								</Button>
 							</div>
 						</div>
 					</div>
@@ -111,7 +119,11 @@ class Index extends React.Component {
 						<div className="col-12 col-md-5 d-flex flex-column justify-content-center ">
 							<p>{en.crewText}</p>
 							<div className="text-left mr-auto">
-								<Button>Book Now</Button>
+								<Button>
+									<a className="text-white" href="https://charu470199.typeform.com/to/YD8ZMm">
+										Book Now
+									</a>
+								</Button>
 							</div>
 						</div>
 					</div>
@@ -127,7 +139,11 @@ class Index extends React.Component {
 							<h4>{en.brandsDescription}</h4>
 							<div className="text-left mx-auto button-container">
 								<a href="https://charu470199.typeform.com/to/YD8ZMm" target="_blank">
-									<Button>Book Your Visit Now</Button>
+									<Button>
+										<a className="text-white" href="https://charu470199.typeform.com/to/YD8ZMm">
+											Book Your Visit Now
+										</a>
+									</Button>
 								</a>
 							</div>
 						</div>
