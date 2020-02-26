@@ -75,33 +75,22 @@ class Index extends React.Component {
 
 					<span className="d-block d-md-none">
 						<div className="row">
-							<div className="col-5">
-								<div className="d-flex">
-									<h3>1</h3>
-									<p className="ml-3">{en.services[0]}</p>
-								</div>
-								<div className="d-flex">
-									<h3>2</h3>
-									<p className="ml-3">{en.services[1]}</p>
-								</div>
-								<div className="d-flex">
-									<h3>3</h3>
-									<p className="ml-3">{en.services[2]}</p>
-								</div>
-								<div className="d-flex">
-									<h3>4</h3>
-									<p className="ml-3">{en.services[3]}</p>
-								</div>
+							<div className="col-6">
+								{en.services.map((s, index) => (
+									<div className="d-flex" key={index}>
+										<h3 style={{ fontSize: 18 }}>{index + 1}</h3>
+										<p className="ml-3" style={{ fontSize: 12 }}>
+											{s}
+										</p>
+									</div>
+								))}
 							</div>
 
-							<div className="col-7 p-0 no-gutters">
-								{/* <img
-									style={{ width: '20rem', height: 900, objectFit: 'cover' }}
-									src="/imgs/home-1.png"
-									alt=""
-								/> */}
+							<div className="col-6  p-0 no-gutters">
 								<div>
-									<video src="/character-anm.mp4" height={300} autoPlay loop />
+									<video height={300} width={200} autoPlay loop>
+										<source src="/character-anm.mp4" />
+									</video>
 								</div>
 							</div>
 						</div>
@@ -177,6 +166,8 @@ class Index extends React.Component {
 							margin-top: 100px;
 						}
 						section > h1 {
+							margin: 0 auto;
+							width: 600px;
 							font-weight: 700;
 							font-size: 60px;
 							text-align: center;
@@ -197,6 +188,10 @@ class Index extends React.Component {
 						}
 
 						@media (max-width: 560px) {
+							section > h1 {
+								width: 100%;
+								margin-bottom: 30px;
+							}
 							.banner {
 								height: 500px;
 								object-fit: cover;
